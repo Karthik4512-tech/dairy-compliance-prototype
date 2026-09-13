@@ -1,0 +1,5 @@
+case,overall_status,completeness_score
+total_gps_loss,PASS,1.0
+network_outage,NEEDS_REVIEW,1.0
+total_sensor_failure,NEEDS_REVIEW,1.0
+combined_worst_case,FAIL,1.0

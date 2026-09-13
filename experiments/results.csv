@@ -1,0 +1,13 @@
+detector,approach,precision,recall,f1,tp,fp,fn,tn
+excursion,baseline,0.647,1.000,0.786,11,6,0,13
+excursion,automated_default,1.000,1.000,1.000,11,0,0,19
+excursion,automated_tuned,1.000,1.000,1.000,11,0,0,19
+custody_gap,baseline,1.000,1.000,1.000,4,0,0,26
+custody_gap,automated_default,1.000,1.000,1.000,4,0,0,26
+custody_gap,automated_tuned,1.000,1.000,1.000,4,0,0,26
+missed_stop,baseline,1.000,1.000,1.000,13,0,0,17
+missed_stop,automated_default,1.000,1.000,1.000,13,0,0,17
+missed_stop,automated_tuned,1.000,1.000,1.000,13,0,0,17
+calibration_expired,baseline,1.000,1.000,1.000,4,0,0,26
+calibration_expired,automated_default,1.000,1.000,1.000,4,0,0,26
+calibration_expired,automated_tuned,1.000,1.000,1.000,4,0,0,26

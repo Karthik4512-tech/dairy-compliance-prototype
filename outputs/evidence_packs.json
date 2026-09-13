@@ -1,0 +1,2219 @@
+[
+  {
+    "batch_id": "B-001",
+    "route_id": "R-001",
+    "overall_status": "FAIL",
+    "completeness_score": 1.0,
+    "generated_at": "2026-09-13T21:11:26Z",
+    "checks": [
+      {
+        "name": "cold_chain",
+        "status": "FAIL",
+        "confidence": "MIXED",
+        "detail": "Sustained cold-chain excursion above 6.0C for 115 min (threshold 10 min).",
+        "evidence_refs": [
+          "12/15 readings observed",
+          "1 noise spikes rejected",
+          "1 points with no evidence and no fallback"
+        ]
+      },
+      {
+        "name": "location_traceability",
+        "status": "PASS",
+        "confidence": "ESTIMATED",
+        "detail": "GPS gap of 25 min bridged using driver-logged stop coordinates from route_events (fallback source).",
+        "evidence_refs": [
+          "14/15 pings with GPS fix",
+          "route_events stop coordinates used as fallback"
+        ]
+      },
+      {
+        "name": "calibration_validity",
+        "status": "PASS",
+        "confidence": "OBSERVED",
+        "detail": "Device LOG-001 calibration valid through 2026-07-13.",
+        "evidence_refs": [
+          "last_calibration=2026-01-14"
+        ]
+      },
+      {
+        "name": "custody_chain",
+        "status": "PASS",
+        "confidence": "OBSERVED",
+        "detail": "Unbroken custody chain across 6 handover(s).",
+        "evidence_refs": [
+          "HO-001-01",
+          "HO-001-02",
+          "HO-001-03",
+          "HO-001-04",
+          "HO-001-05",
+          "HO-001-PLANT"
+        ]
+      },
+      {
+        "name": "route_completion",
+        "status": "PASS",
+        "confidence": "OBSERVED",
+        "detail": "All 5 scheduled stops completed.",
+        "evidence_refs": [
+          "5 planned stops"
+        ]
+      },
+      {
+        "name": "data_sync_integrity",
+        "status": "PASS",
+        "confidence": "MIXED",
+        "detail": "0/15 sensor records never synced (store-and-forward loss - would need manual retrieval from device), 3/15 arrived late via store-and-forward but were recovered and used (ordered by true event_time, not arrival time).",
+        "evidence_refs": [
+          "lost=0",
+          "delayed=3",
+          "live=12"
+        ]
+      }
+    ]
+  },
+  {
+    "batch_id": "B-002",
+    "route_id": "R-002",
+    "overall_status": "FAIL",
+    "completeness_score": 1.0,
+    "generated_at": "2026-09-13T21:11:26Z",
+    "checks": [
+      {
+        "name": "cold_chain",
+        "status": "FAIL",
+        "confidence": "ESTIMATED",
+        "detail": "Sustained cold-chain excursion above 6.0C for 45 min (threshold 10 min).",
+        "evidence_refs": [
+          "16/21 readings observed",
+          "1 noise spikes rejected",
+          "0 points with no evidence and no fallback"
+        ]
+      },
+      {
+        "name": "location_traceability",
+        "status": "PASS",
+        "confidence": "ESTIMATED",
+        "detail": "GPS gap of 36 min bridged using driver-logged stop coordinates from route_events (fallback source).",
+        "evidence_refs": [
+          "17/21 pings with GPS fix",
+          "route_events stop coordinates used as fallback"
+        ]
+      },
+      {
+        "name": "calibration_validity",
+        "status": "FAIL",
+        "confidence": "OBSERVED",
+        "detail": "Device LOG-002 calibration expired 178 days before this batch was formed (due 2025-09-05).",
+        "evidence_refs": [
+          "last_calibration=2025-03-09",
+          "offset=0.18C"
+        ]
+      },
+      {
+        "name": "custody_chain",
+        "status": "PASS",
+        "confidence": "OBSERVED",
+        "detail": "Unbroken custody chain across 6 handover(s).",
+        "evidence_refs": [
+          "HO-002-01",
+          "HO-002-03",
+          "HO-002-04",
+          "HO-002-06",
+          "HO-002-07",
+          "HO-002-PLANT"
+        ]
+      },
+      {
+        "name": "route_completion",
+        "status": "NEEDS_REVIEW",
+        "confidence": "OBSERVED",
+        "detail": "2 scheduled stop(s) not completed: P-0202, P-0205.",
+        "evidence_refs": [
+          "7 planned stops"
+        ]
+      },
+      {
+        "name": "data_sync_integrity",
+        "status": "PASS",
+        "confidence": "MIXED",
+        "detail": "0/21 sensor records never synced (store-and-forward loss - would need manual retrieval from device), 4/21 arrived late via store-and-forward but were recovered and used (ordered by true event_time, not arrival time).",
+        "evidence_refs": [
+          "lost=0",
+          "delayed=4",
+          "live=17"
+        ]
+      }
+    ]
+  },
+  {
+    "batch_id": "B-003",
+    "route_id": "R-003",
+    "overall_status": "PASS",
+    "completeness_score": 1.0,
+    "generated_at": "2026-09-13T21:11:26Z",
+    "checks": [
+      {
+        "name": "cold_chain",
+        "status": "PASS",
+        "confidence": "ESTIMATED",
+        "detail": "All readings (observed + estimated) within 6.0C limit.",
+        "evidence_refs": [
+          "14/15 readings observed",
+          "1 noise spikes rejected",
+          "0 points with no evidence and no fallback"
+        ]
+      },
+      {
+        "name": "location_traceability",
+        "status": "PASS",
+        "confidence": "ESTIMATED",
+        "detail": "GPS gap of 26 min bridged using driver-logged stop coordinates from route_events (fallback source).",
+        "evidence_refs": [
+          "14/15 pings with GPS fix",
+          "route_events stop coordinates used as fallback"
+        ]
+      },
+      {
+        "name": "calibration_validity",
+        "status": "PASS",
+        "confidence": "OBSERVED",
+        "detail": "Device LOG-003 calibration valid through 2026-08-14.",
+        "evidence_refs": [
+          "last_calibration=2026-02-15"
+        ]
+      },
+      {
+        "name": "custody_chain",
+        "status": "PASS",
+        "confidence": "OBSERVED",
+        "detail": "Unbroken custody chain across 6 handover(s).",
+        "evidence_refs": [
+          "HO-003-01",
+          "HO-003-02",
+          "HO-003-03",
+          "HO-003-04",
+          "HO-003-05",
+          "HO-003-PLANT"
+        ]
+      },
+      {
+        "name": "route_completion",
+        "status": "PASS",
+        "confidence": "OBSERVED",
+        "detail": "All 5 scheduled stops completed.",
+        "evidence_refs": [
+          "5 planned stops"
+        ]
+      },
+      {
+        "name": "data_sync_integrity",
+        "status": "PASS",
+        "confidence": "MIXED",
+        "detail": "0/15 sensor records never synced (store-and-forward loss - would need manual retrieval from device), 1/15 arrived late via store-and-forward but were recovered and used (ordered by true event_time, not arrival time).",
+        "evidence_refs": [
+          "lost=0",
+          "delayed=1",
+          "live=14"
+        ]
+      }
+    ]
+  },
+  {
+    "batch_id": "B-004",
+    "route_id": "R-004",
+    "overall_status": "NEEDS_REVIEW",
+    "completeness_score": 1.0,
+    "generated_at": "2026-09-13T21:11:26Z",
+    "checks": [
+      {
+        "name": "cold_chain",
+        "status": "NEEDS_REVIEW",
+        "confidence": "MIXED",
+        "detail": "1 reading(s) at the start/end of the route have no temperature evidence and no neighbouring value to interpolate from (sensor failed and never recovered, or failed before the first reading) - a genuine, unfillable gap. No excursion detected in the data that IS available, but coverage cannot be confirmed complete.",
+        "evidence_refs": [
+          "11/15 readings observed",
+          "1 noise spikes rejected",
+          "1 points with no evidence and no fallback"
+        ]
+      },
+      {
+        "name": "location_traceability",
+        "status": "PASS",
+        "confidence": "ESTIMATED",
+        "detail": "GPS gap of 27 min bridged using driver-logged stop coordinates from route_events (fallback source).",
+        "evidence_refs": [
+          "13/15 pings with GPS fix",
+          "route_events stop coordinates used as fallback"
+        ]
+      },
+      {
+        "name": "calibration_validity",
+        "status": "PASS",
+        "confidence": "OBSERVED",
+        "detail": "Device LOG-004 calibration valid through 2026-06-28.",
+        "evidence_refs": [
+          "last_calibration=2025-12-30"
+        ]
+      },
+      {
+        "name": "custody_chain",
+        "status": "PASS",
+        "confidence": "OBSERVED",
+        "detail": "Unbroken custody chain across 6 handover(s).",
+        "evidence_refs": [
+          "HO-004-01",
+          "HO-004-02",
+          "HO-004-03",
+          "HO-004-04",
+          "HO-004-05",
+          "HO-004-PLANT"
+        ]
+      },
+      {
+        "name": "route_completion",
+        "status": "PASS",
+        "confidence": "OBSERVED",
+        "detail": "All 5 scheduled stops completed.",
+        "evidence_refs": [
+          "5 planned stops"
+        ]
+      },
+      {
+        "name": "data_sync_integrity",
+        "status": "NEEDS_REVIEW",
+        "confidence": "MIXED",
+        "detail": "1/15 sensor records never synced (store-and-forward loss - would need manual retrieval from device), 2/15 arrived late via store-and-forward but were recovered and used (ordered by true event_time, not arrival time).",
+        "evidence_refs": [
+          "lost=1",
+          "delayed=2",
+          "live=12"
+        ]
+      }
+    ]
+  },
+  {
+    "batch_id": "B-005",
+    "route_id": "R-005",
+    "overall_status": "NEEDS_REVIEW",
+    "completeness_score": 1.0,
+    "generated_at": "2026-09-13T21:11:26Z",
+    "checks": [
+      {
+        "name": "cold_chain",
+        "status": "PASS",
+        "confidence": "ESTIMATED",
+        "detail": "All readings (observed + estimated) within 6.0C limit.",
+        "evidence_refs": [
+          "12/15 readings observed",
+          "1 noise spikes rejected",
+          "0 points with no evidence and no fallback"
+        ]
+      },
+      {
+        "name": "location_traceability",
+        "status": "PASS",
+        "confidence": "OBSERVED",
+        "detail": "GPS coverage continuous (max gap 20 min); 15/15 pings had a fix.",
+        "evidence_refs": [
+          "15/15 pings with GPS fix"
+        ]
+      },
+      {
+        "name": "calibration_validity",
+        "status": "PASS",
+        "confidence": "OBSERVED",
+        "detail": "Device LOG-005 calibration valid through 2026-07-14.",
+        "evidence_refs": [
+          "last_calibration=2026-01-15"
+        ]
+      },
+      {
+        "name": "custody_chain",
+        "status": "PASS",
+        "confidence": "OBSERVED",
+        "detail": "Unbroken custody chain across 6 handover(s).",
+        "evidence_refs": [
+          "HO-005-01",
+          "HO-005-02",
+          "HO-005-03",
+          "HO-005-04",
+          "HO-005-05",
+          "HO-005-PLANT"
+        ]
+      },
+      {
+        "name": "route_completion",
+        "status": "PASS",
+        "confidence": "OBSERVED",
+        "detail": "All 5 scheduled stops completed.",
+        "evidence_refs": [
+          "5 planned stops"
+        ]
+      },
+      {
+        "name": "data_sync_integrity",
+        "status": "NEEDS_REVIEW",
+        "confidence": "MIXED",
+        "detail": "1/15 sensor records never synced (store-and-forward loss - would need manual retrieval from device), 3/15 arrived late via store-and-forward but were recovered and used (ordered by true event_time, not arrival time).",
+        "evidence_refs": [
+          "lost=1",
+          "delayed=3",
+          "live=11"
+        ]
+      }
+    ]
+  },
+  {
+    "batch_id": "B-006",
+    "route_id": "R-006",
+    "overall_status": "FAIL",
+    "completeness_score": 1.0,
+    "generated_at": "2026-09-13T21:11:26Z",
+    "checks": [
+      {
+        "name": "cold_chain",
+        "status": "FAIL",
+        "confidence": "ESTIMATED",
+        "detail": "Sustained cold-chain excursion above 6.0C for 175 min (threshold 10 min).",
+        "evidence_refs": [
+          "18/27 readings observed",
+          "5 noise spikes rejected",
+          "0 points with no evidence and no fallback"
+        ]
+      },
+      {
+        "name": "location_traceability",
+        "status": "PASS",
+        "confidence": "ESTIMATED",
+        "detail": "GPS gap of 21 min bridged using driver-logged stop coordinates from route_events (fallback source).",
+        "evidence_refs": [
+          "24/27 pings with GPS fix",
+          "route_events stop coordinates used as fallback"
+        ]
+      },
+      {
+        "name": "calibration_validity",
+        "status": "FAIL",
+        "confidence": "OBSERVED",
+        "detail": "Device LOG-006 calibration expired 150 days before this batch was formed (due 2025-10-03).",
+        "evidence_refs": [
+          "last_calibration=2025-04-06",
+          "offset=0.24C"
+        ]
+      },
+      {
+        "name": "custody_chain",
+        "status": "PASS",
+        "confidence": "OBSERVED",
+        "detail": "Unbroken custody chain across 10 handover(s).",
+        "evidence_refs": [
+          "HO-006-01",
+          "HO-006-02",
+          "HO-006-03",
+          "HO-006-04",
+          "HO-006-05",
+          "HO-006-06",
+          "HO-006-07",
+          "HO-006-08",
+          "HO-006-09",
+          "HO-006-PLANT"
+        ]
+      },
+      {
+        "name": "route_completion",
+        "status": "PASS",
+        "confidence": "OBSERVED",
+        "detail": "All 9 scheduled stops completed.",
+        "evidence_refs": [
+          "9 planned stops"
+        ]
+      },
+      {
+        "name": "data_sync_integrity",
+        "status": "NEEDS_REVIEW",
+        "confidence": "MIXED",
+        "detail": "1/27 sensor records never synced (store-and-forward loss - would need manual retrieval from device), 7/27 arrived late via store-and-forward but were recovered and used (ordered by true event_time, not arrival time).",
+        "evidence_refs": [
+          "lost=1",
+          "delayed=7",
+          "live=19"
+        ]
+      }
+    ]
+  },
+  {
+    "batch_id": "B-007",
+    "route_id": "R-007",
+    "overall_status": "FAIL",
+    "completeness_score": 1.0,
+    "generated_at": "2026-09-13T21:11:26Z",
+    "checks": [
+      {
+        "name": "cold_chain",
+        "status": "NEEDS_REVIEW",
+        "confidence": "ESTIMATED",
+        "detail": "Temperature coverage gap of 28 min exceeds 20 min tolerance; missing points were interpolated but the sparsity itself is flagged for review.",
+        "evidence_refs": [
+          "21/24 readings observed",
+          "2 noise spikes rejected",
+          "0 points with no evidence and no fallback"
+        ]
+      },
+      {
+        "name": "location_traceability",
+        "status": "PASS",
+        "confidence": "ESTIMATED",
+        "detail": "GPS gap of 28 min bridged using driver-logged stop coordinates from route_events (fallback source).",
+        "evidence_refs": [
+          "21/24 pings with GPS fix",
+          "route_events stop coordinates used as fallback"
+        ]
+      },
+      {
+        "name": "calibration_validity",
+        "status": "FAIL",
+        "confidence": "OBSERVED",
+        "detail": "Device LOG-007 calibration expired 44 days before this batch was formed (due 2026-01-17).",
+        "evidence_refs": [
+          "last_calibration=2025-07-21",
+          "offset=-0.26C"
+        ]
+      },
+      {
+        "name": "custody_chain",
+        "status": "PASS",
+        "confidence": "OBSERVED",
+        "detail": "Unbroken custody chain across 9 handover(s).",
+        "evidence_refs": [
+          "HO-007-01",
+          "HO-007-02",
+          "HO-007-03",
+          "HO-007-04",
+          "HO-007-05",
+          "HO-007-06",
+          "HO-007-07",
+          "HO-007-08",
+          "HO-007-PLANT"
+        ]
+      },
+      {
+        "name": "route_completion",
+        "status": "PASS",
+        "confidence": "OBSERVED",
+        "detail": "All 8 scheduled stops completed.",
+        "evidence_refs": [
+          "8 planned stops"
+        ]
+      },
+      {
+        "name": "data_sync_integrity",
+        "status": "NEEDS_REVIEW",
+        "confidence": "MIXED",
+        "detail": "2/24 sensor records never synced (store-and-forward loss - would need manual retrieval from device), 8/24 arrived late via store-and-forward but were recovered and used (ordered by true event_time, not arrival time).",
+        "evidence_refs": [
+          "lost=2",
+          "delayed=8",
+          "live=14"
+        ]
+      }
+    ]
+  },
+  {
+    "batch_id": "B-008",
+    "route_id": "R-008",
+    "overall_status": "FAIL",
+    "completeness_score": 1.0,
+    "generated_at": "2026-09-13T21:11:26Z",
+    "checks": [
+      {
+        "name": "cold_chain",
+        "status": "FAIL",
+        "confidence": "MIXED",
+        "detail": "Sustained cold-chain excursion above 6.0C for 31 min (threshold 10 min).",
+        "evidence_refs": [
+          "22/27 readings observed",
+          "1 noise spikes rejected",
+          "2 points with no evidence and no fallback"
+        ]
+      },
+      {
+        "name": "location_traceability",
+        "status": "PASS",
+        "confidence": "ESTIMATED",
+        "detail": "GPS gap of 23 min bridged using driver-logged stop coordinates from route_events (fallback source).",
+        "evidence_refs": [
+          "23/27 pings with GPS fix",
+          "route_events stop coordinates used as fallback"
+        ]
+      },
+      {
+        "name": "calibration_validity",
+        "status": "PASS",
+        "confidence": "OBSERVED",
+        "detail": "Device LOG-008 calibration valid through 2026-06-11.",
+        "evidence_refs": [
+          "last_calibration=2025-12-13"
+        ]
+      },
+      {
+        "name": "custody_chain",
+        "status": "PASS",
+        "confidence": "OBSERVED",
+        "detail": "Unbroken custody chain across 9 handover(s).",
+        "evidence_refs": [
+          "HO-008-01",
+          "HO-008-02",
+          "HO-008-03",
+          "HO-008-04",
+          "HO-008-05",
+          "HO-008-06",
+          "HO-008-07",
+          "HO-008-08",
+          "HO-008-PLANT"
+        ]
+      },
+      {
+        "name": "route_completion",
+        "status": "NEEDS_REVIEW",
+        "confidence": "OBSERVED",
+        "detail": "1 scheduled stop(s) not completed: P-0809.",
+        "evidence_refs": [
+          "9 planned stops"
+        ]
+      },
+      {
+        "name": "data_sync_integrity",
+        "status": "PASS",
+        "confidence": "MIXED",
+        "detail": "0/27 sensor records never synced (store-and-forward loss - would need manual retrieval from device), 3/27 arrived late via store-and-forward but were recovered and used (ordered by true event_time, not arrival time).",
+        "evidence_refs": [
+          "lost=0",
+          "delayed=3",
+          "live=24"
+        ]
+      }
+    ]
+  },
+  {
+    "batch_id": "B-009",
+    "route_id": "R-009",
+    "overall_status": "NEEDS_REVIEW",
+    "completeness_score": 1.0,
+    "generated_at": "2026-09-13T21:11:26Z",
+    "checks": [
+      {
+        "name": "cold_chain",
+        "status": "NEEDS_REVIEW",
+        "confidence": "ESTIMATED",
+        "detail": "Temperature coverage gap of 26 min exceeds 20 min tolerance; missing points were interpolated but the sparsity itself is flagged for review.",
+        "evidence_refs": [
+          "23/27 readings observed",
+          "3 noise spikes rejected",
+          "0 points with no evidence and no fallback"
+        ]
+      },
+      {
+        "name": "location_traceability",
+        "status": "PASS",
+        "confidence": "ESTIMATED",
+        "detail": "GPS gap of 26 min bridged using driver-logged stop coordinates from route_events (fallback source).",
+        "evidence_refs": [
+          "24/27 pings with GPS fix",
+          "route_events stop coordinates used as fallback"
+        ]
+      },
+      {
+        "name": "calibration_validity",
+        "status": "PASS",
+        "confidence": "OBSERVED",
+        "detail": "Device LOG-009 calibration valid through 2026-08-02.",
+        "evidence_refs": [
+          "last_calibration=2026-02-03"
+        ]
+      },
+      {
+        "name": "custody_chain",
+        "status": "PASS",
+        "confidence": "OBSERVED",
+        "detail": "Unbroken custody chain across 8 handover(s).",
+        "evidence_refs": [
+          "HO-009-01",
+          "HO-009-02",
+          "HO-009-04",
+          "HO-009-05",
+          "HO-009-06",
+          "HO-009-07",
+          "HO-009-09",
+          "HO-009-PLANT"
+        ]
+      },
+      {
+        "name": "route_completion",
+        "status": "NEEDS_REVIEW",
+        "confidence": "OBSERVED",
+        "detail": "2 scheduled stop(s) not completed: P-0903, P-0908.",
+        "evidence_refs": [
+          "9 planned stops"
+        ]
+      },
+      {
+        "name": "data_sync_integrity",
+        "status": "PASS",
+        "confidence": "MIXED",
+        "detail": "0/27 sensor records never synced (store-and-forward loss - would need manual retrieval from device), 5/27 arrived late via store-and-forward but were recovered and used (ordered by true event_time, not arrival time).",
+        "evidence_refs": [
+          "lost=0",
+          "delayed=5",
+          "live=22"
+        ]
+      }
+    ]
+  },
+  {
+    "batch_id": "B-010",
+    "route_id": "R-010",
+    "overall_status": "NEEDS_REVIEW",
+    "completeness_score": 0.83,
+    "generated_at": "2026-09-13T21:11:26Z",
+    "checks": [
+      {
+        "name": "cold_chain",
+        "status": "NEEDS_REVIEW",
+        "confidence": "ESTIMATED",
+        "detail": "Temperature coverage gap of 24 min exceeds 20 min tolerance; missing points were interpolated but the sparsity itself is flagged for review.",
+        "evidence_refs": [
+          "17/18 readings observed",
+          "0 noise spikes rejected",
+          "0 points with no evidence and no fallback"
+        ]
+      },
+      {
+        "name": "location_traceability",
+        "status": "PASS",
+        "confidence": "OBSERVED",
+        "detail": "GPS coverage continuous (max gap 18 min); 16/18 pings had a fix.",
+        "evidence_refs": [
+          "16/18 pings with GPS fix"
+        ]
+      },
+      {
+        "name": "calibration_validity",
+        "status": "PASS",
+        "confidence": "OBSERVED",
+        "detail": "Device LOG-010 calibration valid through 2026-05-19.",
+        "evidence_refs": [
+          "last_calibration=2025-11-20"
+        ]
+      },
+      {
+        "name": "custody_chain",
+        "status": "NEEDS_REVIEW",
+        "confidence": "MANUAL",
+        "detail": "1 handover(s) missing a captured event time / signature (HO-010-04); a manual custody form is required to close this gap.",
+        "evidence_refs": [
+          "HO-010-01",
+          "HO-010-02",
+          "HO-010-03",
+          "HO-010-04",
+          "HO-010-05",
+          "HO-010-06",
+          "HO-010-PLANT"
+        ]
+      },
+      {
+        "name": "route_completion",
+        "status": "PASS",
+        "confidence": "OBSERVED",
+        "detail": "All 6 scheduled stops completed.",
+        "evidence_refs": [
+          "6 planned stops"
+        ]
+      },
+      {
+        "name": "data_sync_integrity",
+        "status": "NEEDS_REVIEW",
+        "confidence": "MIXED",
+        "detail": "1/18 sensor records never synced (store-and-forward loss - would need manual retrieval from device), 3/18 arrived late via store-and-forward but were recovered and used (ordered by true event_time, not arrival time).",
+        "evidence_refs": [
+          "lost=1",
+          "delayed=3",
+          "live=14"
+        ]
+      }
+    ]
+  },
+  {
+    "batch_id": "B-011",
+    "route_id": "R-011",
+    "overall_status": "NEEDS_REVIEW",
+    "completeness_score": 1.0,
+    "generated_at": "2026-09-13T21:11:26Z",
+    "checks": [
+      {
+        "name": "cold_chain",
+        "status": "PASS",
+        "confidence": "ESTIMATED",
+        "detail": "All readings (observed + estimated) within 6.0C limit.",
+        "evidence_refs": [
+          "18/21 readings observed",
+          "2 noise spikes rejected",
+          "0 points with no evidence and no fallback"
+        ]
+      },
+      {
+        "name": "location_traceability",
+        "status": "PASS",
+        "confidence": "OBSERVED",
+        "detail": "GPS coverage continuous (max gap 19 min); 17/21 pings had a fix.",
+        "evidence_refs": [
+          "17/21 pings with GPS fix"
+        ]
+      },
+      {
+        "name": "calibration_validity",
+        "status": "PASS",
+        "confidence": "OBSERVED",
+        "detail": "Device LOG-011 calibration valid through 2026-05-13.",
+        "evidence_refs": [
+          "last_calibration=2025-11-14"
+        ]
+      },
+      {
+        "name": "custody_chain",
+        "status": "PASS",
+        "confidence": "OBSERVED",
+        "detail": "Unbroken custody chain across 7 handover(s).",
+        "evidence_refs": [
+          "HO-011-01",
+          "HO-011-02",
+          "HO-011-03",
+          "HO-011-05",
+          "HO-011-06",
+          "HO-011-07",
+          "HO-011-PLANT"
+        ]
+      },
+      {
+        "name": "route_completion",
+        "status": "NEEDS_REVIEW",
+        "confidence": "OBSERVED",
+        "detail": "1 scheduled stop(s) not completed: P-1104.",
+        "evidence_refs": [
+          "7 planned stops"
+        ]
+      },
+      {
+        "name": "data_sync_integrity",
+        "status": "NEEDS_REVIEW",
+        "confidence": "MIXED",
+        "detail": "1/21 sensor records never synced (store-and-forward loss - would need manual retrieval from device), 4/21 arrived late via store-and-forward but were recovered and used (ordered by true event_time, not arrival time).",
+        "evidence_refs": [
+          "lost=1",
+          "delayed=4",
+          "live=16"
+        ]
+      }
+    ]
+  },
+  {
+    "batch_id": "B-012",
+    "route_id": "R-012",
+    "overall_status": "NEEDS_REVIEW",
+    "completeness_score": 1.0,
+    "generated_at": "2026-09-13T21:11:26Z",
+    "checks": [
+      {
+        "name": "cold_chain",
+        "status": "NEEDS_REVIEW",
+        "confidence": "ESTIMATED",
+        "detail": "Temperature coverage gap of 34 min exceeds 20 min tolerance; missing points were interpolated but the sparsity itself is flagged for review.",
+        "evidence_refs": [
+          "16/18 readings observed",
+          "1 noise spikes rejected",
+          "0 points with no evidence and no fallback"
+        ]
+      },
+      {
+        "name": "location_traceability",
+        "status": "PASS",
+        "confidence": "ESTIMATED",
+        "detail": "GPS gap of 40 min bridged using driver-logged stop coordinates from route_events (fallback source).",
+        "evidence_refs": [
+          "16/18 pings with GPS fix",
+          "route_events stop coordinates used as fallback"
+        ]
+      },
+      {
+        "name": "calibration_validity",
+        "status": "PASS",
+        "confidence": "OBSERVED",
+        "detail": "Device LOG-012 calibration valid through 2026-07-25.",
+        "evidence_refs": [
+          "last_calibration=2026-01-26"
+        ]
+      },
+      {
+        "name": "custody_chain",
+        "status": "PASS",
+        "confidence": "OBSERVED",
+        "detail": "Unbroken custody chain across 7 handover(s).",
+        "evidence_refs": [
+          "HO-012-01",
+          "HO-012-02",
+          "HO-012-03",
+          "HO-012-04",
+          "HO-012-05",
+          "HO-012-06",
+          "HO-012-PLANT"
+        ]
+      },
+      {
+        "name": "route_completion",
+        "status": "PASS",
+        "confidence": "OBSERVED",
+        "detail": "All 6 scheduled stops completed.",
+        "evidence_refs": [
+          "6 planned stops"
+        ]
+      },
+      {
+        "name": "data_sync_integrity",
+        "status": "PASS",
+        "confidence": "MIXED",
+        "detail": "0/18 sensor records never synced (store-and-forward loss - would need manual retrieval from device), 6/18 arrived late via store-and-forward but were recovered and used (ordered by true event_time, not arrival time).",
+        "evidence_refs": [
+          "lost=0",
+          "delayed=6",
+          "live=12"
+        ]
+      }
+    ]
+  },
+  {
+    "batch_id": "B-013",
+    "route_id": "R-013",
+    "overall_status": "NEEDS_REVIEW",
+    "completeness_score": 1.0,
+    "generated_at": "2026-09-13T21:11:26Z",
+    "checks": [
+      {
+        "name": "cold_chain",
+        "status": "NEEDS_REVIEW",
+        "confidence": "MIXED",
+        "detail": "1 reading(s) at the start/end of the route have no temperature evidence and no neighbouring value to interpolate from (sensor failed and never recovered, or failed before the first reading) - a genuine, unfillable gap. No excursion detected in the data that IS available, but coverage cannot be confirmed complete.",
+        "evidence_refs": [
+          "13/18 readings observed",
+          "2 noise spikes rejected",
+          "1 points with no evidence and no fallback"
+        ]
+      },
+      {
+        "name": "location_traceability",
+        "status": "PASS",
+        "confidence": "OBSERVED",
+        "detail": "GPS coverage continuous (max gap 20 min); 15/18 pings had a fix.",
+        "evidence_refs": [
+          "15/18 pings with GPS fix"
+        ]
+      },
+      {
+        "name": "calibration_validity",
+        "status": "PASS",
+        "confidence": "OBSERVED",
+        "detail": "Device LOG-013 calibration valid through 2026-04-05.",
+        "evidence_refs": [
+          "last_calibration=2025-10-07"
+        ]
+      },
+      {
+        "name": "custody_chain",
+        "status": "PASS",
+        "confidence": "OBSERVED",
+        "detail": "Unbroken custody chain across 6 handover(s).",
+        "evidence_refs": [
+          "HO-013-01",
+          "HO-013-02",
+          "HO-013-04",
+          "HO-013-05",
+          "HO-013-06",
+          "HO-013-PLANT"
+        ]
+      },
+      {
+        "name": "route_completion",
+        "status": "NEEDS_REVIEW",
+        "confidence": "OBSERVED",
+        "detail": "1 scheduled stop(s) not completed: P-1303.",
+        "evidence_refs": [
+          "6 planned stops"
+        ]
+      },
+      {
+        "name": "data_sync_integrity",
+        "status": "PASS",
+        "confidence": "MIXED",
+        "detail": "0/18 sensor records never synced (store-and-forward loss - would need manual retrieval from device), 3/18 arrived late via store-and-forward but were recovered and used (ordered by true event_time, not arrival time).",
+        "evidence_refs": [
+          "lost=0",
+          "delayed=3",
+          "live=15"
+        ]
+      }
+    ]
+  },
+  {
+    "batch_id": "B-014",
+    "route_id": "R-014",
+    "overall_status": "NEEDS_REVIEW",
+    "completeness_score": 1.0,
+    "generated_at": "2026-09-13T21:11:26Z",
+    "checks": [
+      {
+        "name": "cold_chain",
+        "status": "NEEDS_REVIEW",
+        "confidence": "MIXED",
+        "detail": "1 reading(s) at the start/end of the route have no temperature evidence and no neighbouring value to interpolate from (sensor failed and never recovered, or failed before the first reading) - a genuine, unfillable gap. No excursion detected in the data that IS available, but coverage cannot be confirmed complete.",
+        "evidence_refs": [
+          "19/27 readings observed",
+          "4 noise spikes rejected",
+          "1 points with no evidence and no fallback"
+        ]
+      },
+      {
+        "name": "location_traceability",
+        "status": "PASS",
+        "confidence": "ESTIMATED",
+        "detail": "GPS gap of 31 min bridged using driver-logged stop coordinates from route_events (fallback source).",
+        "evidence_refs": [
+          "23/27 pings with GPS fix",
+          "route_events stop coordinates used as fallback"
+        ]
+      },
+      {
+        "name": "calibration_validity",
+        "status": "PASS",
+        "confidence": "OBSERVED",
+        "detail": "Device LOG-014 calibration valid through 2026-04-24.",
+        "evidence_refs": [
+          "last_calibration=2025-10-26"
+        ]
+      },
+      {
+        "name": "custody_chain",
+        "status": "PASS",
+        "confidence": "OBSERVED",
+        "detail": "Unbroken custody chain across 8 handover(s).",
+        "evidence_refs": [
+          "HO-014-01",
+          "HO-014-02",
+          "HO-014-03",
+          "HO-014-05",
+          "HO-014-06",
+          "HO-014-08",
+          "HO-014-09",
+          "HO-014-PLANT"
+        ]
+      },
+      {
+        "name": "route_completion",
+        "status": "NEEDS_REVIEW",
+        "confidence": "OBSERVED",
+        "detail": "2 scheduled stop(s) not completed: P-1404, P-1407.",
+        "evidence_refs": [
+          "9 planned stops"
+        ]
+      },
+      {
+        "name": "data_sync_integrity",
+        "status": "NEEDS_REVIEW",
+        "confidence": "MIXED",
+        "detail": "1/27 sensor records never synced (store-and-forward loss - would need manual retrieval from device), 8/27 arrived late via store-and-forward but were recovered and used (ordered by true event_time, not arrival time).",
+        "evidence_refs": [
+          "lost=1",
+          "delayed=8",
+          "live=18"
+        ]
+      }
+    ]
+  },
+  {
+    "batch_id": "B-015",
+    "route_id": "R-015",
+    "overall_status": "FAIL",
+    "completeness_score": 1.0,
+    "generated_at": "2026-09-13T21:11:26Z",
+    "checks": [
+      {
+        "name": "cold_chain",
+        "status": "NEEDS_REVIEW",
+        "confidence": "ESTIMATED",
+        "detail": "Temperature coverage gap of 24 min exceeds 20 min tolerance; missing points were interpolated but the sparsity itself is flagged for review.",
+        "evidence_refs": [
+          "14/15 readings observed",
+          "1 noise spikes rejected",
+          "0 points with no evidence and no fallback"
+        ]
+      },
+      {
+        "name": "location_traceability",
+        "status": "PASS",
+        "confidence": "ESTIMATED",
+        "detail": "GPS gap of 28 min bridged using driver-logged stop coordinates from route_events (fallback source).",
+        "evidence_refs": [
+          "13/15 pings with GPS fix",
+          "route_events stop coordinates used as fallback"
+        ]
+      },
+      {
+        "name": "calibration_validity",
+        "status": "FAIL",
+        "confidence": "OBSERVED",
+        "detail": "Device LOG-015 calibration expired 64 days before this batch was formed (due 2025-12-28).",
+        "evidence_refs": [
+          "last_calibration=2025-07-01",
+          "offset=0.25C"
+        ]
+      },
+      {
+        "name": "custody_chain",
+        "status": "PASS",
+        "confidence": "OBSERVED",
+        "detail": "Unbroken custody chain across 6 handover(s).",
+        "evidence_refs": [
+          "HO-015-01",
+          "HO-015-02",
+          "HO-015-03",
+          "HO-015-04",
+          "HO-015-05",
+          "HO-015-PLANT"
+        ]
+      },
+      {
+        "name": "route_completion",
+        "status": "PASS",
+        "confidence": "OBSERVED",
+        "detail": "All 5 scheduled stops completed.",
+        "evidence_refs": [
+          "5 planned stops"
+        ]
+      },
+      {
+        "name": "data_sync_integrity",
+        "status": "PASS",
+        "confidence": "MIXED",
+        "detail": "0/15 sensor records never synced (store-and-forward loss - would need manual retrieval from device), 3/15 arrived late via store-and-forward but were recovered and used (ordered by true event_time, not arrival time).",
+        "evidence_refs": [
+          "lost=0",
+          "delayed=3",
+          "live=12"
+        ]
+      }
+    ]
+  },
+  {
+    "batch_id": "B-016",
+    "route_id": "R-016",
+    "overall_status": "NEEDS_REVIEW",
+    "completeness_score": 1.0,
+    "generated_at": "2026-09-13T21:11:26Z",
+    "checks": [
+      {
+        "name": "cold_chain",
+        "status": "NEEDS_REVIEW",
+        "confidence": "OBSERVED",
+        "detail": "Temperature coverage gap of 22 min exceeds 20 min tolerance; missing points were interpolated but the sparsity itself is flagged for review.",
+        "evidence_refs": [
+          "18/18 readings observed",
+          "0 noise spikes rejected",
+          "0 points with no evidence and no fallback"
+        ]
+      },
+      {
+        "name": "location_traceability",
+        "status": "PASS",
+        "confidence": "ESTIMATED",
+        "detail": "GPS gap of 22 min bridged using driver-logged stop coordinates from route_events (fallback source).",
+        "evidence_refs": [
+          "15/18 pings with GPS fix",
+          "route_events stop coordinates used as fallback"
+        ]
+      },
+      {
+        "name": "calibration_validity",
+        "status": "PASS",
+        "confidence": "OBSERVED",
+        "detail": "Device LOG-016 calibration valid through 2026-05-11.",
+        "evidence_refs": [
+          "last_calibration=2025-11-12"
+        ]
+      },
+      {
+        "name": "custody_chain",
+        "status": "PASS",
+        "confidence": "OBSERVED",
+        "detail": "Unbroken custody chain across 7 handover(s).",
+        "evidence_refs": [
+          "HO-016-01",
+          "HO-016-02",
+          "HO-016-03",
+          "HO-016-04",
+          "HO-016-05",
+          "HO-016-06",
+          "HO-016-PLANT"
+        ]
+      },
+      {
+        "name": "route_completion",
+        "status": "PASS",
+        "confidence": "OBSERVED",
+        "detail": "All 6 scheduled stops completed.",
+        "evidence_refs": [
+          "6 planned stops"
+        ]
+      },
+      {
+        "name": "data_sync_integrity",
+        "status": "PASS",
+        "confidence": "MIXED",
+        "detail": "0/18 sensor records never synced (store-and-forward loss - would need manual retrieval from device), 4/18 arrived late via store-and-forward but were recovered and used (ordered by true event_time, not arrival time).",
+        "evidence_refs": [
+          "lost=0",
+          "delayed=4",
+          "live=14"
+        ]
+      }
+    ]
+  },
+  {
+    "batch_id": "B-017",
+    "route_id": "R-017",
+    "overall_status": "NEEDS_REVIEW",
+    "completeness_score": 1.0,
+    "generated_at": "2026-09-13T21:11:26Z",
+    "checks": [
+      {
+        "name": "cold_chain",
+        "status": "NEEDS_REVIEW",
+        "confidence": "ESTIMATED",
+        "detail": "Temperature coverage gap of 28 min exceeds 20 min tolerance; missing points were interpolated but the sparsity itself is flagged for review.",
+        "evidence_refs": [
+          "17/18 readings observed",
+          "0 noise spikes rejected",
+          "0 points with no evidence and no fallback"
+        ]
+      },
+      {
+        "name": "location_traceability",
+        "status": "PASS",
+        "confidence": "ESTIMATED",
+        "detail": "GPS gap of 28 min bridged using driver-logged stop coordinates from route_events (fallback source).",
+        "evidence_refs": [
+          "17/18 pings with GPS fix",
+          "route_events stop coordinates used as fallback"
+        ]
+      },
+      {
+        "name": "calibration_validity",
+        "status": "PASS",
+        "confidence": "OBSERVED",
+        "detail": "Device LOG-017 calibration valid through 2026-05-21.",
+        "evidence_refs": [
+          "last_calibration=2025-11-22"
+        ]
+      },
+      {
+        "name": "custody_chain",
+        "status": "PASS",
+        "confidence": "OBSERVED",
+        "detail": "Unbroken custody chain across 7 handover(s).",
+        "evidence_refs": [
+          "HO-017-01",
+          "HO-017-02",
+          "HO-017-03",
+          "HO-017-04",
+          "HO-017-05",
+          "HO-017-06",
+          "HO-017-PLANT"
+        ]
+      },
+      {
+        "name": "route_completion",
+        "status": "PASS",
+        "confidence": "OBSERVED",
+        "detail": "All 6 scheduled stops completed.",
+        "evidence_refs": [
+          "6 planned stops"
+        ]
+      },
+      {
+        "name": "data_sync_integrity",
+        "status": "PASS",
+        "confidence": "MIXED",
+        "detail": "0/18 sensor records never synced (store-and-forward loss - would need manual retrieval from device), 2/18 arrived late via store-and-forward but were recovered and used (ordered by true event_time, not arrival time).",
+        "evidence_refs": [
+          "lost=0",
+          "delayed=2",
+          "live=16"
+        ]
+      }
+    ]
+  },
+  {
+    "batch_id": "B-018",
+    "route_id": "R-018",
+    "overall_status": "NEEDS_REVIEW",
+    "completeness_score": 1.0,
+    "generated_at": "2026-09-13T21:11:26Z",
+    "checks": [
+      {
+        "name": "cold_chain",
+        "status": "NEEDS_REVIEW",
+        "confidence": "ESTIMATED",
+        "detail": "Temperature coverage gap of 26 min exceeds 20 min tolerance; missing points were interpolated but the sparsity itself is flagged for review.",
+        "evidence_refs": [
+          "13/21 readings observed",
+          "2 noise spikes rejected",
+          "0 points with no evidence and no fallback"
+        ]
+      },
+      {
+        "name": "location_traceability",
+        "status": "PASS",
+        "confidence": "ESTIMATED",
+        "detail": "GPS gap of 26 min bridged using driver-logged stop coordinates from route_events (fallback source).",
+        "evidence_refs": [
+          "17/21 pings with GPS fix",
+          "route_events stop coordinates used as fallback"
+        ]
+      },
+      {
+        "name": "calibration_validity",
+        "status": "PASS",
+        "confidence": "OBSERVED",
+        "detail": "Device LOG-018 calibration valid through 2026-04-13.",
+        "evidence_refs": [
+          "last_calibration=2025-10-15"
+        ]
+      },
+      {
+        "name": "custody_chain",
+        "status": "PASS",
+        "confidence": "OBSERVED",
+        "detail": "Unbroken custody chain across 8 handover(s).",
+        "evidence_refs": [
+          "HO-018-01",
+          "HO-018-02",
+          "HO-018-03",
+          "HO-018-04",
+          "HO-018-05",
+          "HO-018-06",
+          "HO-018-07",
+          "HO-018-PLANT"
+        ]
+      },
+      {
+        "name": "route_completion",
+        "status": "PASS",
+        "confidence": "OBSERVED",
+        "detail": "All 7 scheduled stops completed.",
+        "evidence_refs": [
+          "7 planned stops"
+        ]
+      },
+      {
+        "name": "data_sync_integrity",
+        "status": "NEEDS_REVIEW",
+        "confidence": "MIXED",
+        "detail": "1/21 sensor records never synced (store-and-forward loss - would need manual retrieval from device), 3/21 arrived late via store-and-forward but were recovered and used (ordered by true event_time, not arrival time).",
+        "evidence_refs": [
+          "lost=1",
+          "delayed=3",
+          "live=17"
+        ]
+      }
+    ]
+  },
+  {
+    "batch_id": "B-019",
+    "route_id": "R-019",
+    "overall_status": "FAIL",
+    "completeness_score": 1.0,
+    "generated_at": "2026-09-13T21:11:26Z",
+    "checks": [
+      {
+        "name": "cold_chain",
+        "status": "FAIL",
+        "confidence": "ESTIMATED",
+        "detail": "Sustained cold-chain excursion above 6.0C for 122 min (threshold 10 min).",
+        "evidence_refs": [
+          "17/21 readings observed",
+          "2 noise spikes rejected",
+          "0 points with no evidence and no fallback"
+        ]
+      },
+      {
+        "name": "location_traceability",
+        "status": "PASS",
+        "confidence": "ESTIMATED",
+        "detail": "GPS gap of 37 min bridged using driver-logged stop coordinates from route_events (fallback source).",
+        "evidence_refs": [
+          "17/21 pings with GPS fix",
+          "route_events stop coordinates used as fallback"
+        ]
+      },
+      {
+        "name": "calibration_validity",
+        "status": "PASS",
+        "confidence": "OBSERVED",
+        "detail": "Device LOG-019 calibration valid through 2026-05-12.",
+        "evidence_refs": [
+          "last_calibration=2025-11-13"
+        ]
+      },
+      {
+        "name": "custody_chain",
+        "status": "PASS",
+        "confidence": "OBSERVED",
+        "detail": "Unbroken custody chain across 6 handover(s).",
+        "evidence_refs": [
+          "HO-019-01",
+          "HO-019-04",
+          "HO-019-05",
+          "HO-019-06",
+          "HO-019-07",
+          "HO-019-PLANT"
+        ]
+      },
+      {
+        "name": "route_completion",
+        "status": "NEEDS_REVIEW",
+        "confidence": "OBSERVED",
+        "detail": "2 scheduled stop(s) not completed: P-1902, P-1903.",
+        "evidence_refs": [
+          "7 planned stops"
+        ]
+      },
+      {
+        "name": "data_sync_integrity",
+        "status": "PASS",
+        "confidence": "MIXED",
+        "detail": "0/21 sensor records never synced (store-and-forward loss - would need manual retrieval from device), 4/21 arrived late via store-and-forward but were recovered and used (ordered by true event_time, not arrival time).",
+        "evidence_refs": [
+          "lost=0",
+          "delayed=4",
+          "live=17"
+        ]
+      }
+    ]
+  },
+  {
+    "batch_id": "B-020",
+    "route_id": "R-020",
+    "overall_status": "FAIL",
+    "completeness_score": 1.0,
+    "generated_at": "2026-09-13T21:11:26Z",
+    "checks": [
+      {
+        "name": "cold_chain",
+        "status": "FAIL",
+        "confidence": "ESTIMATED",
+        "detail": "Sustained cold-chain excursion above 6.0C for 93 min (threshold 10 min).",
+        "evidence_refs": [
+          "18/21 readings observed",
+          "2 noise spikes rejected",
+          "0 points with no evidence and no fallback"
+        ]
+      },
+      {
+        "name": "location_traceability",
+        "status": "PASS",
+        "confidence": "OBSERVED",
+        "detail": "GPS coverage continuous (max gap 16 min); 16/21 pings had a fix.",
+        "evidence_refs": [
+          "16/21 pings with GPS fix"
+        ]
+      },
+      {
+        "name": "calibration_validity",
+        "status": "PASS",
+        "confidence": "OBSERVED",
+        "detail": "Device LOG-020 calibration valid through 2026-06-09.",
+        "evidence_refs": [
+          "last_calibration=2025-12-11"
+        ]
+      },
+      {
+        "name": "custody_chain",
+        "status": "PASS",
+        "confidence": "OBSERVED",
+        "detail": "Unbroken custody chain across 6 handover(s).",
+        "evidence_refs": [
+          "HO-020-01",
+          "HO-020-02",
+          "HO-020-04",
+          "HO-020-06",
+          "HO-020-07",
+          "HO-020-PLANT"
+        ]
+      },
+      {
+        "name": "route_completion",
+        "status": "NEEDS_REVIEW",
+        "confidence": "OBSERVED",
+        "detail": "2 scheduled stop(s) not completed: P-2003, P-2005.",
+        "evidence_refs": [
+          "7 planned stops"
+        ]
+      },
+      {
+        "name": "data_sync_integrity",
+        "status": "PASS",
+        "confidence": "MIXED",
+        "detail": "0/21 sensor records never synced (store-and-forward loss - would need manual retrieval from device), 4/21 arrived late via store-and-forward but were recovered and used (ordered by true event_time, not arrival time).",
+        "evidence_refs": [
+          "lost=0",
+          "delayed=4",
+          "live=17"
+        ]
+      }
+    ]
+  },
+  {
+    "batch_id": "B-021",
+    "route_id": "R-021",
+    "overall_status": "FAIL",
+    "completeness_score": 0.83,
+    "generated_at": "2026-09-13T21:11:26Z",
+    "checks": [
+      {
+        "name": "cold_chain",
+        "status": "FAIL",
+        "confidence": "ESTIMATED",
+        "detail": "Sustained cold-chain excursion above 6.0C for 26 min (threshold 10 min).",
+        "evidence_refs": [
+          "14/18 readings observed",
+          "3 noise spikes rejected",
+          "0 points with no evidence and no fallback"
+        ]
+      },
+      {
+        "name": "location_traceability",
+        "status": "PASS",
+        "confidence": "OBSERVED",
+        "detail": "GPS coverage continuous (max gap 20 min); 14/18 pings had a fix.",
+        "evidence_refs": [
+          "14/18 pings with GPS fix"
+        ]
+      },
+      {
+        "name": "calibration_validity",
+        "status": "PASS",
+        "confidence": "OBSERVED",
+        "detail": "Device LOG-021 calibration valid through 2026-07-15.",
+        "evidence_refs": [
+          "last_calibration=2026-01-16"
+        ]
+      },
+      {
+        "name": "custody_chain",
+        "status": "NEEDS_REVIEW",
+        "confidence": "MANUAL",
+        "detail": "1 handover(s) missing a captured event time / signature (HO-021-04); a manual custody form is required to close this gap.",
+        "evidence_refs": [
+          "HO-021-01",
+          "HO-021-02",
+          "HO-021-03",
+          "HO-021-04",
+          "HO-021-05",
+          "HO-021-06",
+          "HO-021-PLANT"
+        ]
+      },
+      {
+        "name": "route_completion",
+        "status": "PASS",
+        "confidence": "OBSERVED",
+        "detail": "All 6 scheduled stops completed.",
+        "evidence_refs": [
+          "6 planned stops"
+        ]
+      },
+      {
+        "name": "data_sync_integrity",
+        "status": "PASS",
+        "confidence": "MIXED",
+        "detail": "0/18 sensor records never synced (store-and-forward loss - would need manual retrieval from device), 4/18 arrived late via store-and-forward but were recovered and used (ordered by true event_time, not arrival time).",
+        "evidence_refs": [
+          "lost=0",
+          "delayed=4",
+          "live=14"
+        ]
+      }
+    ]
+  },
+  {
+    "batch_id": "B-022",
+    "route_id": "R-022",
+    "overall_status": "FAIL",
+    "completeness_score": 1.0,
+    "generated_at": "2026-09-13T21:11:26Z",
+    "checks": [
+      {
+        "name": "cold_chain",
+        "status": "FAIL",
+        "confidence": "MIXED",
+        "detail": "Sustained cold-chain excursion above 6.0C for 33 min (threshold 10 min).",
+        "evidence_refs": [
+          "13/15 readings observed",
+          "1 noise spikes rejected",
+          "1 points with no evidence and no fallback"
+        ]
+      },
+      {
+        "name": "location_traceability",
+        "status": "PASS",
+        "confidence": "OBSERVED",
+        "detail": "GPS coverage continuous (max gap 17 min); 13/15 pings had a fix.",
+        "evidence_refs": [
+          "13/15 pings with GPS fix"
+        ]
+      },
+      {
+        "name": "calibration_validity",
+        "status": "PASS",
+        "confidence": "OBSERVED",
+        "detail": "Device LOG-022 calibration valid through 2026-06-22.",
+        "evidence_refs": [
+          "last_calibration=2025-12-24"
+        ]
+      },
+      {
+        "name": "custody_chain",
+        "status": "PASS",
+        "confidence": "OBSERVED",
+        "detail": "Unbroken custody chain across 6 handover(s).",
+        "evidence_refs": [
+          "HO-022-01",
+          "HO-022-02",
+          "HO-022-03",
+          "HO-022-04",
+          "HO-022-05",
+          "HO-022-PLANT"
+        ]
+      },
+      {
+        "name": "route_completion",
+        "status": "PASS",
+        "confidence": "OBSERVED",
+        "detail": "All 5 scheduled stops completed.",
+        "evidence_refs": [
+          "5 planned stops"
+        ]
+      },
+      {
+        "name": "data_sync_integrity",
+        "status": "PASS",
+        "confidence": "MIXED",
+        "detail": "0/15 sensor records never synced (store-and-forward loss - would need manual retrieval from device), 5/15 arrived late via store-and-forward but were recovered and used (ordered by true event_time, not arrival time).",
+        "evidence_refs": [
+          "lost=0",
+          "delayed=5",
+          "live=10"
+        ]
+      }
+    ]
+  },
+  {
+    "batch_id": "B-023",
+    "route_id": "R-023",
+    "overall_status": "FAIL",
+    "completeness_score": 1.0,
+    "generated_at": "2026-09-13T21:11:26Z",
+    "checks": [
+      {
+        "name": "cold_chain",
+        "status": "FAIL",
+        "confidence": "ESTIMATED",
+        "detail": "Sustained cold-chain excursion above 6.0C for 145 min (threshold 10 min).",
+        "evidence_refs": [
+          "15/18 readings observed",
+          "2 noise spikes rejected",
+          "0 points with no evidence and no fallback"
+        ]
+      },
+      {
+        "name": "location_traceability",
+        "status": "PASS",
+        "confidence": "ESTIMATED",
+        "detail": "GPS gap of 33 min bridged using driver-logged stop coordinates from route_events (fallback source).",
+        "evidence_refs": [
+          "15/18 pings with GPS fix",
+          "route_events stop coordinates used as fallback"
+        ]
+      },
+      {
+        "name": "calibration_validity",
+        "status": "PASS",
+        "confidence": "OBSERVED",
+        "detail": "Device LOG-023 calibration valid through 2026-06-01.",
+        "evidence_refs": [
+          "last_calibration=2025-12-03"
+        ]
+      },
+      {
+        "name": "custody_chain",
+        "status": "PASS",
+        "confidence": "OBSERVED",
+        "detail": "Unbroken custody chain across 7 handover(s).",
+        "evidence_refs": [
+          "HO-023-01",
+          "HO-023-02",
+          "HO-023-03",
+          "HO-023-04",
+          "HO-023-05",
+          "HO-023-06",
+          "HO-023-PLANT"
+        ]
+      },
+      {
+        "name": "route_completion",
+        "status": "PASS",
+        "confidence": "OBSERVED",
+        "detail": "All 6 scheduled stops completed.",
+        "evidence_refs": [
+          "6 planned stops"
+        ]
+      },
+      {
+        "name": "data_sync_integrity",
+        "status": "NEEDS_REVIEW",
+        "confidence": "MIXED",
+        "detail": "1/18 sensor records never synced (store-and-forward loss - would need manual retrieval from device), 4/18 arrived late via store-and-forward but were recovered and used (ordered by true event_time, not arrival time).",
+        "evidence_refs": [
+          "lost=1",
+          "delayed=4",
+          "live=13"
+        ]
+      }
+    ]
+  },
+  {
+    "batch_id": "B-024",
+    "route_id": "R-024",
+    "overall_status": "NEEDS_REVIEW",
+    "completeness_score": 1.0,
+    "generated_at": "2026-09-13T21:11:26Z",
+    "checks": [
+      {
+        "name": "cold_chain",
+        "status": "NEEDS_REVIEW",
+        "confidence": "ESTIMATED",
+        "detail": "Temperature coverage gap of 24 min exceeds 20 min tolerance; missing points were interpolated but the sparsity itself is flagged for review.",
+        "evidence_refs": [
+          "13/15 readings observed",
+          "1 noise spikes rejected",
+          "0 points with no evidence and no fallback"
+        ]
+      },
+      {
+        "name": "location_traceability",
+        "status": "PASS",
+        "confidence": "ESTIMATED",
+        "detail": "GPS gap of 36 min bridged using driver-logged stop coordinates from route_events (fallback source).",
+        "evidence_refs": [
+          "13/15 pings with GPS fix",
+          "route_events stop coordinates used as fallback"
+        ]
+      },
+      {
+        "name": "calibration_validity",
+        "status": "PASS",
+        "confidence": "OBSERVED",
+        "detail": "Device LOG-024 calibration valid through 2026-07-17.",
+        "evidence_refs": [
+          "last_calibration=2026-01-18"
+        ]
+      },
+      {
+        "name": "custody_chain",
+        "status": "PASS",
+        "confidence": "OBSERVED",
+        "detail": "Unbroken custody chain across 6 handover(s).",
+        "evidence_refs": [
+          "HO-024-01",
+          "HO-024-02",
+          "HO-024-03",
+          "HO-024-04",
+          "HO-024-05",
+          "HO-024-PLANT"
+        ]
+      },
+      {
+        "name": "route_completion",
+        "status": "PASS",
+        "confidence": "OBSERVED",
+        "detail": "All 5 scheduled stops completed.",
+        "evidence_refs": [
+          "5 planned stops"
+        ]
+      },
+      {
+        "name": "data_sync_integrity",
+        "status": "PASS",
+        "confidence": "MIXED",
+        "detail": "0/15 sensor records never synced (store-and-forward loss - would need manual retrieval from device), 4/15 arrived late via store-and-forward but were recovered and used (ordered by true event_time, not arrival time).",
+        "evidence_refs": [
+          "lost=0",
+          "delayed=4",
+          "live=11"
+        ]
+      }
+    ]
+  },
+  {
+    "batch_id": "B-025",
+    "route_id": "R-025",
+    "overall_status": "NEEDS_REVIEW",
+    "completeness_score": 0.83,
+    "generated_at": "2026-09-13T21:11:26Z",
+    "checks": [
+      {
+        "name": "cold_chain",
+        "status": "NEEDS_REVIEW",
+        "confidence": "ESTIMATED",
+        "detail": "Temperature coverage gap of 32 min exceeds 20 min tolerance; missing points were interpolated but the sparsity itself is flagged for review.",
+        "evidence_refs": [
+          "18/21 readings observed",
+          "2 noise spikes rejected",
+          "0 points with no evidence and no fallback"
+        ]
+      },
+      {
+        "name": "location_traceability",
+        "status": "PASS",
+        "confidence": "ESTIMATED",
+        "detail": "GPS gap of 38 min bridged using driver-logged stop coordinates from route_events (fallback source).",
+        "evidence_refs": [
+          "20/21 pings with GPS fix",
+          "route_events stop coordinates used as fallback"
+        ]
+      },
+      {
+        "name": "calibration_validity",
+        "status": "PASS",
+        "confidence": "OBSERVED",
+        "detail": "Device LOG-025 calibration valid through 2026-06-29.",
+        "evidence_refs": [
+          "last_calibration=2025-12-31"
+        ]
+      },
+      {
+        "name": "custody_chain",
+        "status": "NEEDS_REVIEW",
+        "confidence": "MANUAL",
+        "detail": "1 handover(s) missing a captured event time / signature (HO-025-07); a manual custody form is required to close this gap.",
+        "evidence_refs": [
+          "HO-025-01",
+          "HO-025-02",
+          "HO-025-03",
+          "HO-025-04",
+          "HO-025-05",
+          "HO-025-06",
+          "HO-025-07",
+          "HO-025-PLANT"
+        ]
+      },
+      {
+        "name": "route_completion",
+        "status": "PASS",
+        "confidence": "OBSERVED",
+        "detail": "All 7 scheduled stops completed.",
+        "evidence_refs": [
+          "7 planned stops"
+        ]
+      },
+      {
+        "name": "data_sync_integrity",
+        "status": "PASS",
+        "confidence": "MIXED",
+        "detail": "0/21 sensor records never synced (store-and-forward loss - would need manual retrieval from device), 3/21 arrived late via store-and-forward but were recovered and used (ordered by true event_time, not arrival time).",
+        "evidence_refs": [
+          "lost=0",
+          "delayed=3",
+          "live=18"
+        ]
+      }
+    ]
+  },
+  {
+    "batch_id": "B-026",
+    "route_id": "R-026",
+    "overall_status": "NEEDS_REVIEW",
+    "completeness_score": 1.0,
+    "generated_at": "2026-09-13T21:11:26Z",
+    "checks": [
+      {
+        "name": "cold_chain",
+        "status": "NEEDS_REVIEW",
+        "confidence": "ESTIMATED",
+        "detail": "Temperature coverage gap of 30 min exceeds 20 min tolerance; missing points were interpolated but the sparsity itself is flagged for review.",
+        "evidence_refs": [
+          "19/24 readings observed",
+          "2 noise spikes rejected",
+          "0 points with no evidence and no fallback"
+        ]
+      },
+      {
+        "name": "location_traceability",
+        "status": "PASS",
+        "confidence": "ESTIMATED",
+        "detail": "GPS gap of 34 min bridged using driver-logged stop coordinates from route_events (fallback source).",
+        "evidence_refs": [
+          "20/24 pings with GPS fix",
+          "route_events stop coordinates used as fallback"
+        ]
+      },
+      {
+        "name": "calibration_validity",
+        "status": "PASS",
+        "confidence": "OBSERVED",
+        "detail": "Device LOG-026 calibration valid through 2026-04-07.",
+        "evidence_refs": [
+          "last_calibration=2025-10-09"
+        ]
+      },
+      {
+        "name": "custody_chain",
+        "status": "PASS",
+        "confidence": "OBSERVED",
+        "detail": "Unbroken custody chain across 8 handover(s).",
+        "evidence_refs": [
+          "HO-026-01",
+          "HO-026-02",
+          "HO-026-03",
+          "HO-026-04",
+          "HO-026-05",
+          "HO-026-06",
+          "HO-026-08",
+          "HO-026-PLANT"
+        ]
+      },
+      {
+        "name": "route_completion",
+        "status": "NEEDS_REVIEW",
+        "confidence": "OBSERVED",
+        "detail": "1 scheduled stop(s) not completed: P-2607.",
+        "evidence_refs": [
+          "8 planned stops"
+        ]
+      },
+      {
+        "name": "data_sync_integrity",
+        "status": "NEEDS_REVIEW",
+        "confidence": "MIXED",
+        "detail": "2/24 sensor records never synced (store-and-forward loss - would need manual retrieval from device), 7/24 arrived late via store-and-forward but were recovered and used (ordered by true event_time, not arrival time).",
+        "evidence_refs": [
+          "lost=2",
+          "delayed=7",
+          "live=15"
+        ]
+      }
+    ]
+  },
+  {
+    "batch_id": "B-027",
+    "route_id": "R-027",
+    "overall_status": "NEEDS_REVIEW",
+    "completeness_score": 1.0,
+    "generated_at": "2026-09-13T21:11:26Z",
+    "checks": [
+      {
+        "name": "cold_chain",
+        "status": "NEEDS_REVIEW",
+        "confidence": "ESTIMATED",
+        "detail": "Temperature coverage gap of 26 min exceeds 20 min tolerance; missing points were interpolated but the sparsity itself is flagged for review.",
+        "evidence_refs": [
+          "23/27 readings observed",
+          "2 noise spikes rejected",
+          "0 points with no evidence and no fallback"
+        ]
+      },
+      {
+        "name": "location_traceability",
+        "status": "PASS",
+        "confidence": "ESTIMATED",
+        "detail": "GPS gap of 26 min bridged using driver-logged stop coordinates from route_events (fallback source).",
+        "evidence_refs": [
+          "25/27 pings with GPS fix",
+          "route_events stop coordinates used as fallback"
+        ]
+      },
+      {
+        "name": "calibration_validity",
+        "status": "PASS",
+        "confidence": "OBSERVED",
+        "detail": "Device LOG-027 calibration valid through 2026-07-13.",
+        "evidence_refs": [
+          "last_calibration=2026-01-14"
+        ]
+      },
+      {
+        "name": "custody_chain",
+        "status": "PASS",
+        "confidence": "OBSERVED",
+        "detail": "Unbroken custody chain across 9 handover(s).",
+        "evidence_refs": [
+          "HO-027-01",
+          "HO-027-02",
+          "HO-027-03",
+          "HO-027-04",
+          "HO-027-06",
+          "HO-027-07",
+          "HO-027-08",
+          "HO-027-09",
+          "HO-027-PLANT"
+        ]
+      },
+      {
+        "name": "route_completion",
+        "status": "NEEDS_REVIEW",
+        "confidence": "OBSERVED",
+        "detail": "1 scheduled stop(s) not completed: P-2705.",
+        "evidence_refs": [
+          "9 planned stops"
+        ]
+      },
+      {
+        "name": "data_sync_integrity",
+        "status": "NEEDS_REVIEW",
+        "confidence": "MIXED",
+        "detail": "2/27 sensor records never synced (store-and-forward loss - would need manual retrieval from device), 6/27 arrived late via store-and-forward but were recovered and used (ordered by true event_time, not arrival time).",
+        "evidence_refs": [
+          "lost=2",
+          "delayed=6",
+          "live=19"
+        ]
+      }
+    ]
+  },
+  {
+    "batch_id": "B-028",
+    "route_id": "R-028",
+    "overall_status": "NEEDS_REVIEW",
+    "completeness_score": 0.83,
+    "generated_at": "2026-09-13T21:11:26Z",
+    "checks": [
+      {
+        "name": "cold_chain",
+        "status": "PASS",
+        "confidence": "ESTIMATED",
+        "detail": "All readings (observed + estimated) within 6.0C limit.",
+        "evidence_refs": [
+          "13/18 readings observed",
+          "3 noise spikes rejected",
+          "0 points with no evidence and no fallback"
+        ]
+      },
+      {
+        "name": "location_traceability",
+        "status": "PASS",
+        "confidence": "OBSERVED",
+        "detail": "GPS coverage continuous (max gap 12 min); 18/18 pings had a fix.",
+        "evidence_refs": [
+          "18/18 pings with GPS fix"
+        ]
+      },
+      {
+        "name": "calibration_validity",
+        "status": "PASS",
+        "confidence": "OBSERVED",
+        "detail": "Device LOG-028 calibration valid through 2026-05-30.",
+        "evidence_refs": [
+          "last_calibration=2025-12-01"
+        ]
+      },
+      {
+        "name": "custody_chain",
+        "status": "NEEDS_REVIEW",
+        "confidence": "MANUAL",
+        "detail": "1 handover(s) missing a captured event time / signature (HO-028-05); a manual custody form is required to close this gap.",
+        "evidence_refs": [
+          "HO-028-01",
+          "HO-028-02",
+          "HO-028-03",
+          "HO-028-05",
+          "HO-028-06",
+          "HO-028-PLANT"
+        ]
+      },
+      {
+        "name": "route_completion",
+        "status": "NEEDS_REVIEW",
+        "confidence": "OBSERVED",
+        "detail": "1 scheduled stop(s) not completed: P-2804.",
+        "evidence_refs": [
+          "6 planned stops"
+        ]
+      },
+      {
+        "name": "data_sync_integrity",
+        "status": "PASS",
+        "confidence": "MIXED",
+        "detail": "0/18 sensor records never synced (store-and-forward loss - would need manual retrieval from device), 2/18 arrived late via store-and-forward but were recovered and used (ordered by true event_time, not arrival time).",
+        "evidence_refs": [
+          "lost=0",
+          "delayed=2",
+          "live=16"
+        ]
+      }
+    ]
+  },
+  {
+    "batch_id": "B-029",
+    "route_id": "R-029",
+    "overall_status": "FAIL",
+    "completeness_score": 1.0,
+    "generated_at": "2026-09-13T21:11:26Z",
+    "checks": [
+      {
+        "name": "cold_chain",
+        "status": "FAIL",
+        "confidence": "ESTIMATED",
+        "detail": "Sustained cold-chain excursion above 6.0C for 40 min (threshold 10 min).",
+        "evidence_refs": [
+          "21/24 readings observed",
+          "2 noise spikes rejected",
+          "0 points with no evidence and no fallback"
+        ]
+      },
+      {
+        "name": "location_traceability",
+        "status": "PASS",
+        "confidence": "ESTIMATED",
+        "detail": "GPS gap of 34 min bridged using driver-logged stop coordinates from route_events (fallback source).",
+        "evidence_refs": [
+          "20/24 pings with GPS fix",
+          "route_events stop coordinates used as fallback"
+        ]
+      },
+      {
+        "name": "calibration_validity",
+        "status": "PASS",
+        "confidence": "OBSERVED",
+        "detail": "Device LOG-029 calibration valid through 2026-07-20.",
+        "evidence_refs": [
+          "last_calibration=2026-01-21"
+        ]
+      },
+      {
+        "name": "custody_chain",
+        "status": "PASS",
+        "confidence": "OBSERVED",
+        "detail": "Unbroken custody chain across 7 handover(s).",
+        "evidence_refs": [
+          "HO-029-01",
+          "HO-029-02",
+          "HO-029-03",
+          "HO-029-05",
+          "HO-029-06",
+          "HO-029-08",
+          "HO-029-PLANT"
+        ]
+      },
+      {
+        "name": "route_completion",
+        "status": "NEEDS_REVIEW",
+        "confidence": "OBSERVED",
+        "detail": "2 scheduled stop(s) not completed: P-2904, P-2907.",
+        "evidence_refs": [
+          "8 planned stops"
+        ]
+      },
+      {
+        "name": "data_sync_integrity",
+        "status": "NEEDS_REVIEW",
+        "confidence": "MIXED",
+        "detail": "1/24 sensor records never synced (store-and-forward loss - would need manual retrieval from device), 7/24 arrived late via store-and-forward but were recovered and used (ordered by true event_time, not arrival time).",
+        "evidence_refs": [
+          "lost=1",
+          "delayed=7",
+          "live=16"
+        ]
+      }
+    ]
+  },
+  {
+    "batch_id": "B-030",
+    "route_id": "R-030",
+    "overall_status": "FAIL",
+    "completeness_score": 1.0,
+    "generated_at": "2026-09-13T21:11:26Z",
+    "checks": [
+      {
+        "name": "cold_chain",
+        "status": "FAIL",
+        "confidence": "ESTIMATED",
+        "detail": "Sustained cold-chain excursion above 6.0C for 76 min (threshold 10 min).",
+        "evidence_refs": [
+          "17/18 readings observed",
+          "1 noise spikes rejected",
+          "0 points with no evidence and no fallback"
+        ]
+      },
+      {
+        "name": "location_traceability",
+        "status": "PASS",
+        "confidence": "ESTIMATED",
+        "detail": "GPS gap of 33 min bridged using driver-logged stop coordinates from route_events (fallback source).",
+        "evidence_refs": [
+          "16/18 pings with GPS fix",
+          "route_events stop coordinates used as fallback"
+        ]
+      },
+      {
+        "name": "calibration_validity",
+        "status": "PASS",
+        "confidence": "OBSERVED",
+        "detail": "Device LOG-030 calibration valid through 2026-05-30.",
+        "evidence_refs": [
+          "last_calibration=2025-12-01"
+        ]
+      },
+      {
+        "name": "custody_chain",
+        "status": "PASS",
+        "confidence": "OBSERVED",
+        "detail": "Unbroken custody chain across 6 handover(s).",
+        "evidence_refs": [
+          "HO-030-01",
+          "HO-030-02",
+          "HO-030-03",
+          "HO-030-04",
+          "HO-030-05",
+          "HO-030-PLANT"
+        ]
+      },
+      {
+        "name": "route_completion",
+        "status": "NEEDS_REVIEW",
+        "confidence": "OBSERVED",
+        "detail": "1 scheduled stop(s) not completed: P-3006.",
+        "evidence_refs": [
+          "6 planned stops"
+        ]
+      },
+      {
+        "name": "data_sync_integrity",
+        "status": "PASS",
+        "confidence": "MIXED",
+        "detail": "0/18 sensor records never synced (store-and-forward loss - would need manual retrieval from device), 4/18 arrived late via store-and-forward but were recovered and used (ordered by true event_time, not arrival time).",
+        "evidence_refs": [
+          "lost=0",
+          "delayed=4",
+          "live=14"
+        ]
+      }
+    ]
+  }
+]

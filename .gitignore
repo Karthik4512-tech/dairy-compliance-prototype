@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+env/
+
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# Node
+node_modules/
+
+# Temporary/test data
+scratch/
+
+# Environment/secrets
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
